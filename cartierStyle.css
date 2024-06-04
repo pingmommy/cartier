@@ -1,0 +1,427 @@
+:root {
+  --text-color: #bdbdbd;
+  /* 다크 모드 텍스트 색상 */
+  --bg-color: #121212;
+  /* 다크 모드 배경 색상 */
+}
+
+[data-theme="light"] {
+  --text-color: #000;
+  /* 라이트 모드 텍스트 색상 */
+  --bg-color: #fff;
+  /* 라이트 모드 배경 색상 */
+  .nav-link {
+    color: #121212;
+  }
+  .nav-link:hover {
+    color: #02acca;
+  }
+}
+
+@media (data-theme: light) {
+  .nav-link {
+    color: #121212;
+  }
+
+  a {
+    color: #3ea6ff;
+  }
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.box {
+  border: solid 1px red;
+}
+
+.margin_h20 {
+  margin: 20px 0;
+}
+
+.margin_20 {
+  margin: 20px;
+}
+
+.padding_10 {
+  padding: 10px;
+}
+
+.margin_b100 {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 992px) {
+  .media_margin_b100 {
+    margin: 30px 0;
+  }
+
+  .margin_b100 {
+    margin-bottom: 70px;
+  }
+}
+
+.a_center {
+  align-items: center;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .row {
+    text-align: center;
+  }
+
+  .image-container {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+
+  .col-xs-12 {
+    margin-bottom: 50px;
+  }
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    display: none;
+  }
+}
+
+.navbar_mobile {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .navbar_mobile {
+    display: none;
+    width: 85%;
+  }
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.navbar-logo {
+  position: relative;
+  width: 100%;
+  padding: 20px 0 30px 0;
+  text-align: center;
+}
+
+.dark_button {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+}
+
+.nav-link {
+  color: #818181;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.btn-outline-success {
+  color: #818181;
+  border-color: #818181;
+}
+
+.btn-outline-success:hover {
+  background-color: #b90005;
+  border-color: #b90005;
+}
+
+.card-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-box a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-1,
+.product-2 {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.box-shadow {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
+}
+
+.image-container:hover .product-1 {
+  transform: scale(1.2);
+}
+
+.image-container:hover .product-2 {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.product-w2 {
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover .product-w2 {
+  opacity: 1;
+  transform: scale(1.4);
+}
+
+.card-box-title {
+  letter-spacing: 0.025rem;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.card-box-text {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card-divext a {
+  text-decoration: underline;
+}
+
+.card-box-price {
+  font-weight: bold;
+  letter-spacing: 0;
+  margin-bottom: 5px;
+  letter-spacing: 0.055rem;
+}
+
+.bottom_menu_t {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.bottom_menu_in {
+  padding: 5px 0;
+  font-size: 12px;
+}
+
+.bottom_menu_in span {
+  padding: 3px 0;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+  color: #808080;
+}
+
+.bottom_menu_in span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #808080;
+  transition: width 0.3s ease-in-out;
+  transform-origin: left;
+}
+
+.bottom_menu_in span:hover::after {
+  width: 100%;
+  transform: scaleX(1);
+}
+
+.footer-partners {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: solid 1px #cccccc;
+  border-bottom: solid 1px #cccccc;
+  padding: 50px 0;
+}
+
+.footer-partners-img a img {
+  height: 35px;
+  padding: 0 25px;
+}
+
+@media (max-width: 576px) {
+  .footer-partners-img {
+    width: 33%;
+  }
+
+  .footer-partners-img a img {
+    height: 20px;
+  }
+}
+
+.footer-business-information {
+  font-size: 0.719rem;
+  padding: 50px 0;
+}
+
+.footer-business-information a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer--businessdetails__text {
+  border-right: 1px solid #676767;
+}
+
+.footer--businessdetails__text {
+  padding: 0 7px;
+}
+
+.module-grid--spacing-row-regular > .module-grid__item {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bottom_b_icon {
+  justify-content: space-between;
+}
+
+.b_icon {
+  font-size: 25px;
+}
+
+.b_icon:hover {
+  color: #b90005;
+  transform: scale(1.2);
+}
+
+/*이벤트 팝업*/
+.popup {
+  display: none;
+  /* 초기에는 팝업을 숨깁니다. */
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: #8080803a;
+  padding: 5px;
+}
+
+@media (max-width: 576px) {
+  .popup {
+    width: 90%;
+  }
+
+  .bottom_b_icon {
+    justify-content: space-around;
+  }
+}
+
+.slider img {
+  display: none;
+  /* 슬라이더 이미지를 숨깁니다. */
+}
+
+.popup_tail {
+  display: flex;
+  background-color: #0000;
+}
+
+.popup_tail button {
+  width: 50%;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.offcanvas.offcanvas-end {
+  width: 85%;
+}
+
+.m_side_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 12px;
+  color: #808080;
+  padding: 20px;
+}
+
+.m_side_menu span {
+  margin-bottom: 10px;
+}

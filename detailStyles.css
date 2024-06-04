@@ -1,0 +1,68 @@
+.price {
+  background-color: white;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: transform 0.7s;
+  padding-bottom: 10px;
+}
+.product {
+  transition: transform 0.5s;
+}
+
+.product:hover {
+  transform: scale(1.1);
+}
+
+.product:hover .price {
+  opacity: 1;
+  transform: translateY(-30px);
+}
+
+.card-middle {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.mainBanner {
+  width: 100%;
+  height: 350px;
+  background-image: url("https://image.wconcept.co.kr/images/builder/1/4/15/32/1902x450_20240518171711.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.adidas {
+  margin-left: 30px;
+  animation: titleText 1s ease-in-out;
+}
+.btn-link {
+  color: black;
+  font-size: 1.2rem;
+  /* padding-top: 0px; */
+}
+
+@keyframes titleText {
+  0% {
+    transform: translateY(140px);
+    opacity: 0;
+  }
+
+  92% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.room-100 {
+  margin-top: 80px;
+}
